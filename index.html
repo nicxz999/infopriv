@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/78a47c9fc1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Info Priv</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="howDoYouPrefer">Como você prefere pagar?</h1>
+            <div class="paymentMethods">
+                <div class="payMethodPix" id="btnPix">
+                    <svg class="payment-method-logo__image--pix" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M21.7553 8.96391L15.0106 2.20698C13.4043 0.597675 10.6064 0.597675 8.98936 2.20698L2.24468 8.96391C1.43617 9.76323 1 10.8397 1 11.98C1 13.1204 1.44681 14.1861 2.24468 14.9961L8.98936 21.7531C9.79787 22.563 10.8617 23 12 23C13.1383 23 14.2021 22.5524 15.0106 21.7531L21.7553 14.9961C23.4149 13.3335 23.4149 10.6265 21.7553 8.96391ZM10.117 3.33668C10.617 2.83578 11.2872 2.55868 12 2.55868C12.7128 2.55868 13.383 2.83578 13.883 3.33668L16.7872 6.24621H15.8298C15.4681 6.24621 15.1277 6.41674 14.9043 6.70449L12.5106 9.76323C12.3723 9.93375 12.1702 10.0403 11.9574 10.0403C11.8192 10.0403 11.5957 10.0084 11.4149 9.77389L9.02128 6.71515C8.79787 6.42739 8.45744 6.25687 8.09574 6.25687H7.21277L10.117 3.34734V3.33668ZM13.883 20.6234C12.883 21.6358 11.1277 21.6358 10.117 20.6234L7.55319 18.0549H7.74468C8.31915 18.0549 8.85106 17.7991 9.21277 17.3408L11.4043 14.5378C11.5851 14.3034 11.8298 14.2501 11.9468 14.2714C12.1596 14.2714 12.3617 14.3673 12.5 14.5378L14.6915 17.3408C15.0426 17.7884 15.5851 18.0442 16.1596 18.0442H16.4362L13.8723 20.6127L13.883 20.6234ZM20.6277 13.8664L18.0319 16.4669H16.1596C16.0745 16.4669 16 16.4242 15.9468 16.371L13.7553 13.568C13.3085 13.0138 12.6596 12.6834 11.9468 12.6834C11.2447 12.6834 10.5851 13.0031 10.1596 13.568L7.96809 16.371C7.9149 16.4349 7.84042 16.4775 7.75532 16.4775H5.96808L3.37234 13.8771C2.87234 13.3762 2.59574 12.7047 2.59574 11.9907C2.59574 11.2766 2.87234 10.6052 3.37234 10.1043L5.61702 7.85552H7.89362L10.1596 10.7544C10.5957 11.3086 11.2447 11.639 11.9468 11.639C12.6489 11.639 13.3085 11.3192 13.7553 10.7544L16.0213 7.85552H18.3723L20.617 10.1043C21.6489 11.1381 21.6489 12.8326 20.617 13.8771L20.6277 13.8664Z" fill="currentColor"></path></svg>
+                    <span>Pix</span>
+                </div>
+                <div class="payMethodCard">
+                    <div class="cardTitle">
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="currentColor" class="payment-method-logo__image--new_card_row"><path d="M8.248 14.25H3.751V12.75H8.248V14.25Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21 0.75H3C1.75736 0.75 0.75 1.75736 0.75 3V15C0.75 16.2426 1.75736 17.25 3 17.25H21C22.2426 17.25 23.25 16.2426 23.25 15V3C23.25 1.75736 22.2426 0.75 21 0.75ZM2.25 8.25V6.75H21.75V8.25H2.25ZM2.25 5.25H21.75V3C21.75 2.58579 21.4142 2.25 21 2.25H3C2.58579 2.25 2.25 2.58579 2.25 3V5.25ZM2.25 9.75H21.75V15C21.75 15.4142 21.4142 15.75 21 15.75H3C2.58579 15.75 2.25 15.4142 2.25 15V9.75Z" fill="currentColor"></path></svg>
+                        <span>Cartão de Crédito</span>
+                    </div>
+                    <div class="cardContent">
+                        <div class="inputGroup">
+                            <label for="cardNumber">Número do cartão</label>
+                            <input type="text" name="cardNumber" class="inputCard" placeholder="0000 0000 0000 0000">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="validade">Validade</label>
+                            <input type="text" name="validade" class="inputCard" placeholder="00/00">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="cvv">CVV</label>
+                            <input type="text" name="cvv" class="inputCard" placeholder="3 ou 4 dígitos">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" class="inputCard" placeholder="000.000.000-00">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="nome">Nome do Titular</label>
+                            <input type="text" name="nome" class="inputCard" placeholder="Ex: João de Sousa">
+                        </div>
+                        <div class="inputGroup">
+                            <label for="parcelas">Parcelas</label>
+                            <select name="parcelas" id="parcelas">
+                                <option value="1">1x de R$249,00</option>
+                                <option value="2">2x de R$124,50</option>
+                                <option value="3">3x de R$83,00</option>
+                            </select>
+                        </div>
+                        <button class="btnPayCard">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <header class="asideHeader">
+                <img src="assets/img/logo.jpeg" alt="imgProduto" class="imgProduto">
+                <strong>InfoPrive</strong>
+            </header>
+            <div class="paymentsDetail">
+                <strong>Detalhes do pagamento</strong>
+                <div>
+                    <h4>Jogo Único</h4>
+                    <h4>R$ 249.00</h4>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <div id="modal">
+        <div class="modalContent">
+            <div class="closeContent">
+                <i class="bi bi-x" id="btnCloseModal"></i>
+            </div>
+            <img src="assets/img/qrCode.jpeg" alt="imgPix" class="imgPix">
+            <input type="text" value="00020101021226820014br.gov.bcb.pix2560pix.stone.com.br/pix/v2/85814ef9-8efa-4386-8bd2-88dc61396d3f5204000053039865406249.005802BR5915LM DIGITAL LTDA6014RIO DE JANEIRO62290525fc1dc8ccf3941743d23e9ef3a630485DA" class="inputPix">
+            <button class="btnCopy">
+                <i class="bi bi-copy"></i>
+                Copiar
+            </button>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
